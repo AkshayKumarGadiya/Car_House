@@ -1,0 +1,443 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+ - Submit1
+ - Submit2
+ - Submit3
+ - Submit4
+ - Submit5
+
+- Author:  Andrey Sokoltsov
+- Profile:	http://themeforest.net/user/andreysokoltsov
+
+-------------------------------------------------------------------*/
+
+/* Submit1 */
+/*infoBar*/
+.m-submit1 .b-infoBar,.m-submit2 .b-infoBar,.m-submit3 .b-infoBar,.m-submit4 .b-infoBar,.m-submit5 .b-infoBar{
+    padding: 35px 0;
+}
+
+.b-infoBar__progress-line{
+   box-shadow:0 0 5px rgba(0,0,0,0.2); 
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+}
+
+.b-infoBar__progress-line-step{
+    height: 7px;
+    width:25%;
+    float:left;
+    position: relative;
+}
+
+.b-infoBar__progress-line-step-circle{
+    border:1px solid #cfcfcf;
+    position: absolute;
+    width:25px;
+    height:25px;
+    border-radius: 100%;
+    left: -1px;
+    top:-9px;
+    text-align: center;
+}
+
+.b-infoBar__progress-line-step-circle-inner{
+    position: absolute;
+    width: 13px;
+    height:13px;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    background-color:#ccc;
+    border-radius: 100%;
+}
+
+.b-infoBar__progress-line-step-circle.m-last{
+    right:-25px;
+    left:auto;
+}
+/*infoBar*/
+
+/*b-submit*/
+.b-submit{
+    padding: 75px 0 180px 0;
+}
+
+.b-submit__aside{
+    border-bottom:7px solid #555;
+}
+
+.b-submit__aside-step{
+    background: #737373; /* Old browsers */
+    background: -moz-linear-gradient(top,  #737373 0%, #656565 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#737373), color-stop(100%,#656565)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #737373 0%,#656565 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #737373 0%,#656565 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #737373 0%,#656565 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #737373 0%,#656565 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#737373', endColorstr='#656565',GradientType=0 ); /* IE6-9 */
+    padding: 25px 0 25px 25px;
+    border-bottom:1px solid #555;
+}
+
+.b-submit__aside-step.m-active{
+    background: #444;
+    border-color:#444;
+}
+
+.b-submit__aside-step h3{
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    font: 700 12px 'Open Sans',sans-serif;
+}
+
+.b-submit__aside-step:last-child{
+    border-bottom: none;
+}
+
+.b-submit__aside-step-inner{
+    padding: 20px 10px 15px 20px;
+    background: #444;
+    position: relative;
+    height:70px;
+}
+
+.b-submit__aside-step-inner-info-triangle{
+    width: 0;
+	height: 0;
+	border-top: 35px solid transparent;
+	border-left:30px solid red;
+	border-bottom: 35px solid transparent;
+    position: absolute;
+    left:100%;
+    top:0;
+    z-index:100;
+}
+
+.b-submit__aside-step-inner-icon{
+    width:35px;
+    float:left;
+}
+
+.b-submit__aside-step-inner-icon span.fa{
+    font-size:22px;
+    margin-top: 3px;
+}
+
+.b-submit__aside-step-inner-info{
+    float:left;
+    margin-left: 7px;
+}
+
+.b-submit__aside-step-inner-info h4{
+    font: 700 14px 'Open Sans',sans-serif;
+    margin: 0 0 3px 0;
+    padding-left: 5px;
+    border-left:4px solid #f76d2b;
+    text-transform: uppercase;
+    line-height:1;
+}
+
+.b-submit__aside-step-inner-info p{
+    font: 600 11px 'Open Sans',sans-serif;
+    margin: 0;
+    color:#b4b4b4;
+}
+
+.b-submit__aside-step-inner.m-active .b-submit__aside-step-inner-info h4{
+    border-color:#fff;
+}
+
+.b-submit__aside-step-inner.m-active .b-submit__aside-step-inner-info p{
+    color:#fff;
+}
+
+.b-submit__main{
+    margin-left: 50px;
+}
+
+.b-submit__main-element{
+    margin-bottom: 35px;
+}
+/*b-submit*/
+
+
+/* Submit2 */
+/*b-infoBar*/
+.b-infoBar__progress-line-step.m-active{
+    background: url(../images/backgrounds/progress.jpg) repeat-x;
+}
+
+.m-submit2 .b-submit__main-element{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.b-submit__main p{
+    font: 400 13px 'Open Sans',sans-serif;
+    margin: 0 0 35px 0;
+    line-height:1.7;
+}
+
+.m-submit2 .s-headerSubmit{
+    margin-bottom: 35px;
+}
+
+.b-submit__main-element.m-border{
+    border-bottom:none!important;
+}
+
+/* Submit4 */
+.b-submit__main-file .s-headerSubmit{
+    margin-bottom: 35px;
+}
+
+.b-submit__main-file{
+    margin-bottom: 65px;
+}
+
+.b-submit__main-file:last-child{
+    margin-bottom: 35px;  
+}
+
+.b-submit__main-file label.btn.m-btn{
+    font: 600 10px 'Open Sans',sans-serif;
+    cursor:pointer;
+    padding-left: 15px;
+    border:1px solid #ddd;
+}
+
+.b-submit__main-file label.btn.m-btn span.fa{
+    width:20px;
+    height:20px;
+    font-size:12px;
+    padding: 4px;
+    margin-left: 10px;
+}
+
+.b-submit__main-file label.btn.m-btn + label{
+    margin-left: 15px;
+    font: 600 10px 'Open Sans',sans-serif;
+    vertical-align: middle;
+}
+
+.b-submit__main-file textarea{
+    height:190px;
+}
+
+/* Submit4 */
+.b-submit__main-contacts{
+    margin-bottom:35px;
+}
+
+.b-submit__main-contacts:first-child{
+    margin-bottom: 65px;
+}
+
+.b-submit__main-contacts:last-of-type{
+    margin-bottom: 0px;
+}
+
+.b-submit__main-contacts .s-headerSubmit,.b-submit__main-plan .s-headerSubmit{
+    margin-bottom: 35px;
+}
+
+.b-submit__main-contacts p,.b-submit__main-plan p{
+    margin-bottom: 50px;
+}
+
+.b-submit__main-contacts-price{
+    padding: 35px 45px;
+    background: url(../images/backgrounds/blue.png) -90px center no-repeat;
+    background-color:#2475ce ;
+}
+
+.b-submit__main-contacts-price h6{
+    font: 600 16px 'Open Sans',sans-serif;
+    margin: 14px 0 0 0;
+    text-transform: uppercase;
+}
+
+.b-submit__main-contacts-price-input{
+    position: relative;
+}
+
+.b-submit__main-contacts-price-input input[type='text']{
+    background: #fff!important;
+    padding-left: 60px;
+    padding-right: 85px;
+}
+
+.b-submit__main-contacts-price-input  span.fa{
+    position: absolute; 
+    font-size:20px;
+    padding-right: 10px;
+    border-right:1px solid #ccc;
+    color:#ccc;
+    left:20px;
+    top:13px;
+}
+
+.b-submit__main-contacts-price-input-usd{
+    display: inline-block;
+    position: absolute;
+    font: 600 10px 'Open Sans',sans-serif;
+    top:6px;
+    right:8px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.b-submit__main-contacts-price-note{
+    font: 600 10px 'Open Sans',sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.b-submit__main-contacts-inputSelect{
+    position: relative;
+}
+
+.b-submit__main-contacts-inputSelect input[type='text']{
+    padding-right: 95px;
+}
+
+.b-submit__main-contacts-select{
+    position: absolute;
+    display: inline-block;
+    top:5px;
+    background: transparent;
+    right:5px;
+}
+
+.b-submit__main-contacts-select select{
+    background: #fff!important;
+    font: 600 10px 'Open Sans',sans-serif;
+    border: none;
+    height: auto;
+    padding: 10px 25px 10px 15px;
+    z-index:100;
+    cursor: pointer;
+}
+
+.b-submit__main-contacts-select select +  span.fa{
+    top:11px!important;
+    right:12px!important;
+}
+
+.b-submit__main-contacts-check{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.b-submit__main-contacts-check > span{
+    font: 400 13px 'Open Sans',sans-serif;
+    padding: 0 25px 0 10px;
+    vertical-align: super;
+}
+
+.b-submit__main-contacts-check .s-submitCheck{
+    font: 700 13px 'Open Sans',sans-serif;
+    margin-right: 15px;
+}
+
+.b-submit__main-contacts-check .s-submitCheckLabel span.fa{
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+
+/* Submit5 */
+.b-submit__main-plan{
+    margin-bottom: 65px;
+}
+
+.b-submit__main-plan .b-submit__main-contacts-price{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.b-submit__main-contacts-price-plan{
+    font: 600 16px 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height:2.5;
+}
+
+.b-submit__main-contacts-price-plan span{
+    font: 800 22px 'Open Sans',sans-serif;
+    margin-left: 5px;
+}
+
+.b-submit__main-contacts-price-plan > a{
+    font: 600 10px 'Open Sans',sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 22px;
+    border-radius:30px;
+    margin-left: 10px;
+    vertical-align: top;
+    margin-top: 3px;
+
+}
+
+.b-submit__main-plan-money{
+    font: 700 20px 'Open Sans',sans-serif;
+    margin-left: 10px;
+}
+
+.b-submit__main-plan-money-note{
+   font: 400 13px 'Open Sans',sans-serif; 
+}
+
+.b-submit__main-plan label.s-submitCheckLabel{
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.b-submit__main-plan label.s-submitCheckLabel span.m-circle{
+    width:8px;
+    height:8px;
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+a.btn.m-btn.m-pay span.fa{
+    width:25px;
+    height:25px;
+    font-size:14px;
+    padding: 5px;
+    margin-left: 13px;
+}
+
+a.btn.m-btn.m-pay{
+    font: 600 12px 'Open Sans',sans-serif;
+    border:1px solid #ddd;
+    padding-left: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 4px;
+}
+
+a.btn.m-btn.m-pay:hover{
+    border-color:#f76d2b;
+}
+
+.b-submit__main-plan + button[type='submit']{
+    margin-top: 15px;
+}
+
+.b-submit__main-plan:last-of-type{
+    margin-bottom: 0;
+}
+/*b-submit*/

@@ -1,0 +1,436 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+ - Info Bar
+ - Detail
+ - Related
+ - Brands
+
+- Author:  Andrey Sokoltsov
+- Profile:	http://themeforest.net/user/andreysokoltsov
+
+-------------------------------------------------------------------*/
+
+/* Info Bar */
+.b-infoBar__premium{
+    float:left;
+    font: 700 10px 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    padding: 7px 10px;
+}
+
+.btn.m-btn.m-infoBtn{
+    padding-left: 10px;
+    font: 600 10px 'Open Sans',sans-serif;
+    border:1px solid #dddddd;
+}
+
+.btn.m-btn.m-infoBtn span.fa{
+    width:20px;
+    height:20px;
+    font-size:14px;
+    padding: 2px;
+    margin-left: 15px;
+}
+
+.b-infoBar__btns a.btn{
+    float:right;
+    margin-left: 8px;
+}
+
+.m-detail .b-infoBar{
+    padding: 30px 0 25px 0;
+}
+
+/* Detail */
+.b-detail{
+    padding: 70px 0 110px 0;
+}
+
+.b-detail__head{
+    padding: 0 0 30px 0;
+    margin-bottom: 60px;
+}
+
+.b-detail__head-title{
+    padding-left: 15px;
+}
+.b-detail__head-title span.fa
+{
+    color: #FF6200;
+}
+
+.b-detail__head h1{
+    font: 700 25px 'PT Sans',sans-serif;
+    margin:0;
+}
+
+.b-detail__head h3{
+    font: 400 14px 'Open Sans',sans-serif;
+    margin: 0;
+}
+
+.b-detail__head-price{
+    width:224px;
+    float:right;
+    text-align: center;
+}
+
+.b-detail__head-price-num{
+    padding: 8px 30px;
+    font: 700 25px 'PT Sans',sans-serif;
+}
+
+.b-detail__head-price p{
+    font: 400 11px 'Open Sans',sans-serif;
+}
+
+.b-detail__main-aside-desc{
+    margin-bottom: 60px;
+}
+
+.b-detail__main-aside-desc > h2{
+    margin-bottom: 30px;
+}
+
+.b-detail__main-aside-desc-title{
+    margin: 0 0 10px 0;
+    padding-left: 15px;
+    border-left: 3px solid #FF6200;
+    color: black!important;
+    font-weight: bold;
+    font: 300 13px 'Open Sans',sans-serif;
+}
+
+.b-detail__main-aside-desc-value:before
+{
+    content: ":";
+    font-weight: bold;
+    margin-right: 70px;
+}
+.b-detail__main-aside-desc-value{
+    margin: 0 0 10px 0;
+    padding-left: 15px;
+    color: black;
+    margin-left: -80px;
+    font: 600 13px 'Open Sans',sans-serif;
+}
+
+.b-detail__main-aside-about-call{
+    padding: 20px 0 25px 80px;
+    position: relative;
+}
+
+.b-detail__main-aside-about-call span.fa{
+    display: block;
+    height:100%;
+    font-size:34px;
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 32px 15px 0 15px;
+}
+
+.b-detail__main-aside-about-call > div{
+    font: 700 26px 'Open Sans',sans-serif;
+}
+
+.b-detail__main-aside-about-call p{
+    font: 400 11px 'Open Sans',sans-serif;
+    margin: 0;    
+}
+
+.b-detail__main-aside-about-seller{
+    padding: 10px 0 15px 0;
+}
+
+.b-detail__main-aside-about-seller p{
+    font: 400 12px 'Open Sans',sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.b-detail__main-aside-about-seller p span{
+    font: 700 12px 'Open Sans',sans-serif;
+}
+
+.b-detail__main-aside-about-form{
+    padding: 40px 28px;
+    margin-bottom: 60px;
+}
+
+.b-detail__main-aside-about-form-links{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.b-detail__main-aside-about-form-links a{
+    display: inline-block;
+    text-transform: uppercase;
+    font: 600 12px 'Open Sans',sans-serif;
+    margin: 0 10px;
+    padding-bottom: 8px;
+    border-color: #e8e8e8!important;
+}
+
+.b-detail__main-info-text .b-detail__main-aside-about-form-links a{
+    border-color: #b4b4b4!important;
+}
+
+.b-detail__main-aside-about-form-links a:after{
+    background: url(../images/elements/chevron-downGrey.png) center top no-repeat;
+}
+
+.b-detail__main-aside-about-form-links a:hover,.b-detail__main-aside-about-form-links a:visited,.b-detail__main-aside-about-form-links a:active,.b-detail__main-aside-about-form-links a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+.b-detail__main-aside form input[type='text'],.b-detail__main-aside form input[type='email'],.b-detail__main-aside form input[type='tel'],.b-detail__main-aside form textarea,.b-detail__main-aside form select{
+    display: block;
+    width:100%;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    font: 400 10px 'Open Sans',sans-serif;
+    border: 1px solid #eeeeee;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.b-detail__main-aside form textarea{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.b-detail__main-aside form input[type='text']:focus,.b-detail__main-aside form input[type='email']:focus,.b-detail__main-aside form input[type='tel']:focus,.b-detail__main-aside form textarea:focus,.b-detail__main-aside form select:focus{
+    outline: none;
+}
+
+.b-detail__main-aside form label{
+    font: 400 12px 'Open Sans',sans-serif;
+}
+
+.b-detail__main-aside form button.btn.m-btn{
+    font: 700 12px 'Open Sans',sans-serif;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.b-detail__main-aside form button.btn.m-btn span.fa{
+    width:25px;
+    height:25px;
+    padding: 3px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#form2{
+    display: none;
+}
+
+.b-detail__main-aside-payment-form{
+    padding: 40px 28px;
+}
+
+.b-detail__main-aside-payment .b-detail__main-aside-about-call > p span{
+    font-weight:bold;
+}
+
+.b-detail__main-aside-payment .b-detail__main-aside-about-call > div > p{
+    display: inline;
+}
+
+.b-detail__main-info-images-big{
+    position: relative;
+    padding-left: 0;
+    list-style:none;
+}
+
+.b-detail__main-info-images-big .b-items__cars-one-img-video{
+    right:15px;
+    bottom: 22px;
+    left:auto;
+    top:auto;
+}
+
+.b-detail__main-info-images-small-one{
+   margin:5px 0 11px 0;
+   position: relative;
+   cursor: pointer;
+   display: block;
+}
+
+.b-detail__main-info-images-small-one:after{
+    position: absolute;
+    height:100%;
+    width:100%;
+    left:0;
+    background: rgba(0,0,0,0.6);
+    content:'';
+    top:0;
+    display: none;
+}
+
+.b-detail__main-info-images-small-one.active:after,
+.b-detail__main-info-images-small-one:hover:after{
+    display: block;
+}
+
+.b-detail__main-info-characteristics{
+    border-top:1px solid #eeeeee;
+    border-left:1px solid #eeeeee;
+    border-bottom:1px solid #eeeeee;
+    margin-top: 33px;
+    overflow: hidden;
+    margin-bottom: 65px;
+}
+
+.b-detail__main-info-characteristics-one{
+    float:left;
+    width:14.285%;
+    cursor: pointer;
+}
+
+.b-detail__main-info-characteristics-one-top{
+    padding: 20px 0 15px 0;
+    border-right:1px solid #eeeeee;
+    border-bottom:1px solid #eeeeee;
+}
+
+.b-detail__main-info-characteristics-one-top > div{
+    font-size: 20px;
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+    margin: 0 auto 0 auto;
+}
+
+.b-detail__main-info-characteristics-one:last-child .b-detail__main-info-characteristics-one-top{
+    border-right:none;
+}
+
+.b-detail__main-info-characteristics-one:last-child {
+    border-right:1px solid #eee;
+}
+
+.b-detail__main-info-characteristics-one-bottom{
+    padding: 15px 0;
+    text-align: center;
+    font: 400 11px 'Open Sans',sans-serif;
+}
+
+.b-detail__main-info-characteristics-one-top > p{
+    font: 700 11px 'Open Sans',sans-serif;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.b-detail__main-info-text .b-detail__main-aside-about-form-links a:after{
+    background: url(../images/elements/chevron-down.png) no-repeat center;
+}
+
+.b-detail__main-info-text .b-detail__main-aside-about-form-links{
+    text-align: left;
+}
+
+.b-detail__main-info-text .b-detail__main-aside-about-form-links a{
+    margin: 0 20px 0 0;
+}
+
+.b-detail__main-info-text p{
+    font: 300 13px 'Open Sans',sans-serif;
+    margin-bottom: 35px;
+    line-height:1.9;
+}
+
+#info2,#info3,#info4,#info5{
+    display: none;
+}
+.b-detail__main-info-extra{
+    margin-top: 10px;
+}
+
+.b-detail__main-info-extra h2{
+    margin-bottom: 5px;
+}
+
+.b-detail__main-info-extra ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 5px;
+}
+
+.b-detail__main-info-extra ul li{
+    font: 300 13px 'Open Sans',sans-serif;
+    margin-bottom: 10px;
+}
+
+.b-detail__main-info-extra ul li span.fa{
+    margin-right: 10px;
+    font-size:16px;
+}
+
+.m-detail .bx-wrapper .bx-controls-direction a,.m-blog .bx-wrapper .bx-controls-direction a,.m-article .bx-wrapper .bx-controls-direction a{
+    display: none;
+}
+
+.m-detail .bx-wrapper .bx-viewport,.m-blog .bx-wrapper .bx-viewport,.m-article .bx-wrapper .bx-viewport{
+    box-shadow: none;
+    border-color:transparent;
+}
+
+.m-detail .bx-wrapper,.m-blog .bx-wrapper,.m-article .bx-wrapper{
+    margin-bottom: 0;
+}
+
+
+/* Related */
+.b-related{
+    padding: 65px 0 60px 0;
+    text-align: center;
+}
+
+.b-related h5,.b-brands h5{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.b-related .b-featured__item-links{
+    text-align: center;
+}
+
+.b-related .b-auto__main-item{
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.b-related .b-auto__main-item:after{
+    display: none;
+}
+
+.b-related .b-auto__main-item-info{
+    overflow: visible;
+    padding-bottom: 20px;
+    border-color: #d8d8d8;
+}
+
+.b-related .b-auto__main-item-info:after{
+    left:30px;
+    top:99%;
+    background: url(../images/elements/chevron-downGrey.png) no-repeat;
+}
+
+/* Brands */
+.b-brands{
+    padding: 90px 0 120px 0;
+    text-align: center;
+}
+
+.b-brands__brand{
+    margin: 0 30px;
+    display: inline-block;
+}

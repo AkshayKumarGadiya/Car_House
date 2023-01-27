@@ -1,0 +1,640 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+ - Global
+ - Loader
+
+- Author:  Andrey Sokoltsov
+- Profile:	http://themeforest.net/user/andreysokoltsov
+
+-------------------------------------------------------------------*/
+
+/* Global */
+a:focus{
+    outline:none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.s-relative{
+    position: relative;
+}
+
+.s-noLeftPadding{
+    padding-left: 0!important;
+}
+
+.s-noPadding{
+    padding: 0!important;
+}
+
+.s-noRightMargin{
+    margin-right: 0;
+}
+
+.s-title{
+    font: 700 18px 'Open Sans',sans-serif;
+    margin: 0 0 50px 0;
+    padding: 0 15px;
+/*    bordr-left: 4px solid #f76d2b;*/
+    border-right: 4px solid #f76d2b;
+    border-left: 4px solid #f76d2b;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.s-title1{
+    font: 700 14px 'Open Sans',sans-serif;
+    margin: 0 0 13px 0;
+    padding: 0 15px;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+    color: #fff;
+    
+}
+
+.s-titleDet{
+    font: 700 14px 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    padding-left: 12px;
+    border-left:4px solid #f76d2b;
+    margin-bottom: 25px;
+}
+
+.s-shadow{
+    position: relative;
+    box-shadow: 0px 30px 100px -38px rgba(0,0,0,0.3);
+    z-index:100;
+}
+
+.s-shadow.b-breadCumbs{
+    box-shadow: 0px 30px 50px -24px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+.s-whiteShadow{
+    position: relative;
+}
+
+.s-whiteShadow:after{
+    left: 0;
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 17px;
+    background: url(../images/elements/whiteShadow.png) center bottom no-repeat;
+    z-index: 1000;
+}
+
+.s-lineDownLeft{
+    text-align: left;
+    border-bottom: 1px solid #B4B4B4;
+    position: relative;
+}
+
+.s-lineDownLeft:after{
+    background: url(../images/elements/chevron-down.png) center no-repeat;
+    width: 15px;
+    left: 5%;
+    height: 7px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    display: block
+}
+
+.s-lineDownCenter{
+    text-align: center;
+    border-bottom: 1px solid #B4B4B4!important;
+    position: relative;
+}
+
+.s-lineDownCenter:after{
+    background: url(../images/elements/chevron-down.png) center no-repeat;
+    width: 15px;
+    height: 7px;
+    content: '';
+    position: absolute;
+    width:100%;
+    top: 100%;
+    display: block;
+    left:0;
+}
+
+.s-titleLeft{
+    padding-bottom: 15px;
+    float:left;
+    margin-bottom: 40px;
+}
+
+.s-titleLeft:after{
+    left:25px;
+}
+
+.s-titleLeft > div{
+    overflow: hidden;
+}
+
+.s-titleLeft h2{
+    margin: 0;
+    font-size:15px;
+    padding-right: 8px;
+}
+
+.s-list{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+
+.s-list span.fa{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.s-list li{
+    font:300 13px 'Open Sans',sans-serif;
+    margin-bottom: 10px;
+}
+
+.s-form select{
+    width:100%!important;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font: 400 10px 'Open Sans',sans-serif!important;
+}
+
+.s-form select + span.fa-caret-down{
+    right:25px!important;
+}
+
+.s-form input[type='password']{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    font: 400 10px 'Open Sans',sans-serif;
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
+    position: relative;
+}
+s-form input[type='text'],.s-form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    font: 400 10px 'Open Sans',sans-serif;
+    border: 1px solid #eeeeee;
+    text-transform: uppercase;
+    border-radius: 30px;
+    resize: none;
+}
+.s-form textarea{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.s-form input[type='text']:focus,.s-form textarea:focus{
+    outline:none;
+}
+
+
+.show
+{
+    position: absolute;
+    margin-top: -50px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.show i.fa
+{
+    color: #ABABAB;
+    font-size: 16px;
+}
+
+.show1
+{
+    position: absolute;
+    right: 35px;
+    margin-top: -50px;
+    cursor: pointer;
+}
+
+.show1 i.fa
+{
+    color: #ABABAB;
+    font-size: 16px;
+}
+
+/*.show1
+{
+    position: absolute;
+    color: blue;
+    margin-top: -50px;
+    margin-left: 530px;
+}*/
+
+.s-form input[type='text']{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    font: 400 13px 'Open Sans',sans-serif;
+    border: 1px solid #eeeeee;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.s-form input[type='text']:focus,.s-form textarea:focus{
+    outline:none;
+}
+.s-form input[type='password']::-webkit-input-placeholder{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.s-form input[type='password']:focus,.s-form textarea:focus{
+    outline:none;
+}
+
+.lblpass
+{
+   text-transform: capitalize;
+   float: right;
+   margin-bottom: 15px;
+   margin-right: 15px;
+   font: 400 14px 'Open Sans',sans-serif;
+}
+
+.s-form input::-webkit-input-placeholder{
+    color:#999;
+    font-size: 10px;
+}
+
+.s-form input::-moz-placeholder{
+    color:#999;
+}
+
+.s-form button[type='submit']{
+    font: 700 12px 'Open Sans',sans-serif;
+    padding-left: 20px;
+    margin-top: 25px;
+}
+
+.s-form button[type='submit'] span.fa{
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.s-form button[type='button']{
+    font: 700 12px 'Open Sans',sans-serif;
+    padding-left: 20px;
+    margin-top: 25px;
+    background-color: #FF6200;
+}
+.s-form button[type='button'] i.fa{
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    font-size: 16px;
+    margin-left: -15px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.s-form input[type='file']{
+    position: absolute;
+    opacity: 0;
+    z-index:-100;
+}
+
+.s-headerSubmit{
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.s-headerSubmit:after{
+    left:30px;
+}
+
+.s-headerSubmit h2{
+    font: 600 20px 'Open Sans',sans-serif;
+    margin: 0;
+    color:#212121;
+    padding-left: 10px;
+    border-left:4px solid #f76d2b;
+    text-transform: none;
+    line-height:1.2;
+}
+
+.s-submit label{
+    display: block;
+    margin: 0 0 15px 15px;
+    font: 400 13px 'Open Sans',sans-serif;
+    
+}
+
+.s-submit select{
+    width:100%!important;
+    background: #f7f7f7!important;
+    color:#444;
+    height:46px;
+    cursor:pointer;
+}
+
+.s-submit select + span.fa{
+    right:25px!important;
+}
+
+.s-submit input[type='text']{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    font: 400 13px 'Open Sans',sans-serif;
+    border: 1px solid #eeeeee;
+    color:#444;
+    background: #f7f7f7!important;
+    text-transform: none;
+    border-radius: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    height:46px;
+}
+
+.s-submit input[type='text']:focus{
+    outline:none;
+}
+
+.s-submit input[type='text']::-webkit-input-placeholder{
+    color:#444;
+}
+
+.s-submit input[type='text']::-moz-placeholder{
+    color:#444;
+}
+
+.s-submit input[type='text']:-moz-placeholder{
+    color:#444;
+}
+
+.s-submit input[type='text']:-ms-input-placeholder{
+    color:#444;
+}
+.s-submit input[type='date']{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    font: 400 13px 'Open Sans',sans-serif;
+    border: 1px solid #eeeeee;
+    color:#444;
+    background: #f7f7f7!important;
+    text-transform: none;
+    border-radius: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    height:46px;
+}
+
+.s-submit input[type='date']:focus{
+    outline:none;
+}
+
+.s-submit input[type='date']::-webkit-input-placeholder{
+    color:#444;
+}
+
+.s-submit input[type='date']::-moz-placeholder{
+    color:#444;
+}
+
+.s-submit input[type='date']:-moz-placeholder{
+    color:#444;
+}
+
+.s-submit input[type='date']:-ms-input-placeholder{
+    color:#444;
+}
+
+.s-submit button.btn.m-btn{
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+.s-submit button.btn.m-btn span.fa{
+    width:30px;
+    height:30px;
+    padding: 5px;
+    font-size:18px;
+}
+
+.s-submit input[type='checkbox'],.s-submit input[type='radio']{
+    visibility: hidden;
+    position: absolute; 
+}
+
+label.s-submitCheckLabel{
+    width:20px;
+    height:20px;
+    background: transparent;
+    border:1px solid #ddd;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+label.s-submitCheckLabel span{
+    display: none;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:2px;
+    left:0;
+}
+
+.s-submit input[type='checkbox']:focus{
+    outline:none;
+}
+
+.s-submit input[type='checkbox']:checked + label.s-submitCheckLabel span{
+    display: block;
+}
+
+.s-submit input[type='radio']:checked + label.s-submitCheckLabel span{
+    display: block;
+}
+
+label.s-submitCheck{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 10px;
+    vertical-align: super;
+    cursor: pointer;
+}
+
+.modal-body iframe{
+    width:100%!important;
+    border:none!important;
+}
+#to-top{
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+	padding: 15px;
+	color: #fff;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 9999;
+	border-radius: 3px;
+}
+.chart{
+	position: relative;
+}
+.chart canvas{
+	position: absolute;
+}
+
+
+/* Loader */
+.preloaderjs .spinner{
+	display:none !important;
+}
+.preloaderjs#page-preloader{
+	background:  rgba( 46, 46, 46, 0.99)  !important;
+}
+#page-preloader {
+	position: fixed;
+	z-index: 100500;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #555;
+}
+#page-preloader .spinner {
+	position: absolute;
+	z-index: 1001;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin-top: -50px;
+	margin-left: -50px;
+	-webkit-animation: spin 2.5s infinite linear;
+	animation: spin 2.5s infinite linear;
+	border: 3px solid transparent;
+	border-top-color: #3cd225;
+	border-radius: 50%;
+}
+#page-preloader .spinner:before, #page-preloader .spinner:after {
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+}
+#page-preloader .spinner:before {
+	top: 5px;
+	right: 5px;
+	bottom: 5px;
+	left: 5px;
+	-webkit-animation: spin 2s infinite linear;
+	animation: spin 2s infinite linear;
+	border: 3px solid transparent;
+	border-top-color:#2475ce;
+}
+#page-preloader .spinner:after {
+	top: 15px;
+	right: 15px;
+	bottom: 15px;
+	left: 15px;
+	-webkit-animation: spin 1s infinite linear;
+	animation: spin 1s infinite linear;
+	border: 3px solid transparent;
+	border-top-color: #f76d2b;
+}
+@-webkit-keyframes spin {
+	0% {
+	-webkit-transform: rotate(0);
+	transform: rotate(0);
+}
+100% {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+}
+@keyframes spin {
+	0% {
+	-webkit-transform: rotate(0);
+	transform: rotate(0);
+}
+100% {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+}
+
+/* Pager Slider */
+.pagerSlider .bx-wrapper .bx-controls-direction a{
+	display: none !important;
+}
+.pagerSlider .bx-wrapper:hover .bx-controls-direction a{
+	display: block !important;
+}
+.pagerSlider .bx-wrapper .bx-controls-direction a span{
+	color: #fff;
+	display: block;
+	font-size: 29px;
+	text-align: center;
+	text-indent: 0;
+}
+.pagerSlider .bx-wrapper .bx-controls-direction a.disabled{
+	display: none !important;
+}
+.pagerSlider.pagerVertical .bx-wrapper .bx-controls-direction a.bx-prev{
+	background: #555;
+	left: 0;
+	margin: 0;
+	top: 5px;
+	width: 92%;
+}
+.pagerSlider.pagerVertical .bx-wrapper .bx-controls-direction a.bx-next{
+	background: #555;
+	bottom: 5px;
+	left: 0;
+	margin: 0;
+	top: auto;
+	width: 92%;
+}
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FF6200; 
+}

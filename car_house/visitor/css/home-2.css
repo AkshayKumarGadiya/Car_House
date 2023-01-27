@@ -1,0 +1,488 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+ - Slider
+ - Search
+ - World
+ - Featured
+ - Welcome
+ - Home Auto
+ - Count
+ - Home Reviews
+ - Asks
+ - Partners
+ - Info
+ - Footer
+
+- Author:  Andrey Sokoltsov
+- Profile:	http://themeforest.net/user/andreysokoltsov
+
+-------------------------------------------------------------------*/
+/*=======================Home=======================*/
+/* Slider */
+.m-home .b-slider__info h2{
+    line-height: 1!important;
+}
+
+/* Search */
+.m-home .b-search__main{
+    margin-top: 0;
+    height:320px;
+}
+
+.m-home .b-search .container > h1{
+    text-transform: uppercase;
+    font: 700 20px 'Open Sans',sans-serif;
+    text-align: center;
+    margin: 45px 0 40px 0;
+}
+
+.m-home .b-search__main >h4{
+    text-transform: uppercase;
+    font: 600 12px 'Open Sans',sans-serif;
+    margin:0 0 45px 0;
+    padding-bottom: 20px;  
+    position: relative;
+    display: inline-block;
+}
+
+.m-home .b-search__main >h4:before{
+    height:1px;
+    width: 70%;
+    left:15%;
+    border-bottom: 1px solid #B4B4B4;
+    content: '';
+    position: absolute;
+    top: 100%;
+    display: block;
+}
+
+.m-home .b-search__main >h4:after{
+    background: url(../images/elements/chevron-down.png) center no-repeat;
+    width: 100%;
+    height: 7px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    display: block;
+}
+
+/* World */
+.m-home .b-world{
+    padding-top: 150px;
+    padding-bottom: 35px;
+    background: none;
+}
+
+.m-home .b-world:after{
+    display: none;
+}
+
+/* Featured */
+.m-home .b-featured{
+    padding-top: 65px;
+    padding-bottom: 70px;
+    background: url(../images/backgrounds/featured.jpg);
+    background-size: cover;
+}
+
+.m-home .b-featured:after{
+    display: none;
+}
+
+
+.m-home .b-featured__item > a{
+    margin-bottom: 0;
+    height:125px;
+}
+
+.m-home .b-featured__item > a img{
+    margin-top: 10px;
+}
+
+.m-home .b-featured__item-price{
+    margin-left: 0;
+}
+
+.m-home .b-featured__item h5{
+    padding-left: 0;
+    padding-bottom: 35px;
+    border-bottom: none;
+    background: url(../images/elements/line.png) left bottom no-repeat;
+}
+
+.m-home .b-featured__item h5:after{
+    display: none;
+}
+
+.m-home .b-featured__item .m-premium,.m-home .b-featured__item .m-leasing{
+    top:13px;
+    right:10px;
+}
+
+/* Welcome */
+.m-home .b-welcome{
+    background-image: none;
+}
+
+.m-home .b-welcome__services{
+    margin: 0;
+}
+
+.m-home .b-welcome__services-auto,.m-home .b-welcome__services-buying{
+    width:220px;
+}
+
+.m-home .b-welcome__services-trade,.m-home .b-welcome__services-support{
+    width:220px;
+    float:right;
+}
+
+.m-home .m-circle{
+    width:220px;
+}
+
+.m-home .b-welcome__services-circle{
+    margin-right: -18px;
+    z-index:1000;
+    position: relative;
+}
+
+.m-home .b-welcome__services-circle.m-left{
+    margin-left: -18px;
+    margin-right: 0;
+}
+
+.m-home .b-welcome__text{
+    margin-top: 25px;
+}
+
+/* Home Auto */
+.m-home .b-homeAuto{
+    padding: 90px 0;
+    position: relative;
+    box-shadow: 0px 30px 100px -38px rgba(0,0,0,0.3);
+    z-index:100;
+}
+
+.m-home .b-homeAuto__latest{
+    text-align: center;
+    margin-right: 15px;
+}
+
+.m-home .b-homeAuto__world{
+    text-align: center;
+     margin-left: 15px;
+}
+
+.m-home .b-homeAuto__world-item{
+    margin-bottom: 85px;
+}
+
+.m-home .b-homeAuto__world-item-info{
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #B4B4B4;
+    position: relative;
+    min-height:150px;
+}
+
+
+.m-home .b-homeAuto__world-item-info:after{
+    background: url(../images/elements/chevron-down.png) center no-repeat;
+    width: 15px;
+    left: 20px;
+    height: 7px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    display: block;
+}
+
+.m-home .b-homeAuto__world-item-info > h2{
+    margin: 0 0 25px 0;
+    font: 600 16px 'Open Sans',sans-serif;
+    padding: 0 0 0 15px;
+    text-align: left;
+    position: relative;
+}
+
+.m-home .b-homeAuto__world-item-info > h2 a{
+    text-decoration: none;
+}
+
+.m-home .b-homeAuto__world-item-info > h2:before{
+    height:20px;
+    border-left: 3px solid #f76d2b;
+    position: absolute;
+    left:0;
+    top:0;
+    content:'';
+}
+
+.m-home  .b-homeAuto__world .b-world__item-val{
+    margin-left: 18px;
+    margin-bottom: 0;
+}
+
+.m-home .b-homeAuto__world-item-text{
+    text-align: left;
+}
+
+.m-home .b-homeAuto__world-item-text span{
+    font: 700 10px 'Open Sans',sans-serif;
+}
+
+.m-home .b-homeAuto__world-item-text p{
+    margin-top: 15px;
+    font: 300 13px 'Open Sans',sans-serif;
+}
+
+.m-home .b-homeAuto__world > a{
+    font: 600 10px 'Open Sans',sans-serif!important;
+    text-transform: uppercase;
+    border: 1px solid #dddddd;
+    padding: 3px 3px 3px 15px;
+    float: right;
+    margin-top: -20px;
+}
+
+.m-home .b-homeAuto__world > a span.fa{
+    width:25px;
+    height:25px;
+    font-size:14px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.m-home .b-homeAuto__world > a:hover{
+    background: #f76d2b;
+    color:#fff;
+    border-color: #f76d2b;
+}
+
+.m-home .b-homeAuto__world > a:hover span.fa{
+    background: #fff;
+    color:#555;
+    
+}
+
+/* Count */
+.m-home .b-count{
+    background: url(../images/backgrounds/homeCount.jpg) right bottom no-repeat;
+}
+
+.m-home .b-count__item-circle{
+    width:120px;
+    height:120px;
+}
+
+.m-home .b-count__item h5{
+    font-weight:600;
+}
+
+/* Home Reviews */
+.m-home .b-homeReviews{
+    padding: 70px 0 85px 0;
+    background:url(../images/backgrounds/homeReviews.jpg) top center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.m-home .b-homeReviews__main{
+    text-align: left;
+    margin: 0 15px;
+}
+
+.m-home .b-homeReviews__main-body{
+    height:222px;
+    padding: 35px;
+    position: relative;
+    cursor:pointer;
+}
+
+.m-home .b-homeReviews__main-body p{
+    visibility: hidden;
+    z-index:100000;
+    position: relative;
+    font-family:'Playfair Display',serif;
+    font-weight:normal;
+    font-style: italic;
+}
+
+.m-home .b-homeReviews__main-body:after{
+    content:'';
+    background:rgba(247,109,43,0.9) ;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+
+.m-home .b-homeReviews__main-body:hover:after{
+    display: block;
+}
+
+.m-home .b-homeReviews__main-body:hover p{
+    visibility: visible;
+}
+
+.m-home .b-homeReviews__main-body.m-jaguarRev{
+    background: url(../media/reviews-bg/jaguarRev.jpg) no-repeat;
+    background-size: cover;
+}
+
+.m-home .b-homeReviews__main-body.m-bmw{
+    background: url(../media/reviews-bg/bmwRev.jpg) no-repeat;
+    background-size: cover;
+}
+
+.m-home .b-homeReviews__main-person{
+    margin-top: 25px;
+    padding-left: 35px;
+}
+
+.m-home .b-homeReviews__main-person-name{
+    position: relative;
+    float:left;
+}
+
+.m-home .b-homeReviews__main-person-name h4{
+    font: 700 12px 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 25px;
+}
+
+.m-home .b-homeReviews__main-person-name p{
+    margin: 0;
+    font: 400 12px 'Open Sans',sans-serif;
+    padding-left: 25px;
+}
+
+.m-home .b-homeReviews__main-person-name em{
+    position: absolute;
+    font-size: 60px;
+    top:0;
+    left:0;
+    font-style: italic;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    line-height:50px;
+}
+
+.m-home .b-review__main-person{
+    height:85px;
+    width:85px;
+    margin-right: 40px;
+    margin-top: -60px;
+}
+
+.m-home .b-review__main-person-inside{
+    height:75px;
+    width:75px
+}
+
+.m-home .b-review__main-person-inside.m-personTwo{
+    background: url(../media/persons/person2.jpg) center center no-repeat;
+}
+
+.m-home .b-review__main-person-inside.m-personThree{
+    background: url(../media/persons/person3.jpg) center center no-repeat;
+}
+
+
+/* Asks */
+.m-home .b-asks{
+    padding: 90px 0 100px 0;
+    position: relative;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.m-home .b-asks:after{
+    background: url(../images/elements/chevron-downHome.png) center no-repeat;
+    width: 100%;
+    height: 12px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    display: block;
+}
+
+.m-home .b-asks__first-info{
+    text-align: left;
+}
+
+/* Partners */
+.m-home .b-partners{
+    padding: 80px 0 120px 0;
+    text-align: center;
+}
+
+.m-home .b-partners h1.s-title{
+    margin-bottom: 20px;
+}
+
+/* Info */
+.m-home .b-info__aside{
+    margin-top: -80px;
+    padding-bottom: 20px;
+}
+
+.m-home .b-info__aside p span{
+    margin: 0 5px;
+}
+
+.m-home .b-info__contacts,.m-home .b-info__map{
+    margin-left: 60px;
+}
+
+.m-home .b-info__latest-article-info h6{
+    margin-bottom: 0;  
+}
+
+.m-home .b-info__latest-article-info p{
+    margin-top: 5px;
+}
+
+.m-home .b-info__latest-article{
+    padding-bottom: 10px;
+}
+
+/* Footer */
+.m-home .b-footer{
+   position: relative;
+}
+
+.m-home .b-footer__toTop{
+    width:45px;
+    height:45px;
+    border-radius: 100%;
+    background: #333333;
+    position: absolute;
+    right:10%;
+    top:-22.5px;
+    display: inline-block;
+}
+
+.m-home .b-footer__toTop-inside{
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin: auto;
+    width:35px;
+    height:35px;
+    border-radius: 100%;
+    font-size:20px;
+    padding: 2px;
+}

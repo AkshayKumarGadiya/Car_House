@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="4">
+        <file>
+            <url>application/views/footer_script.php</url>
+            <bookmark id="4">
+                <name/>
+                <line>30</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>application/views/admin/manage_area.php</url>
+            <bookmark id="2">
+                <name/>
+                <line>169</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>application/controllers/Authorize.php</url>
+            <bookmark id="1">
+                <name/>
+                <line>485</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>application/controllers/Pages.php</url>
+            <bookmark id="3">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/opt/lampp/htdocs/car_house/application/views/carmela/index.php</file>
+            <file>file:/opt/lampp/htdocs/car_house/application/controllers/Carmela.php</file>
+            <file>file:/opt/lampp/htdocs/car_house/application/views/listTable.php</file>
+            <file>file:/opt/lampp/htdocs/car_house/application/controllers/Edit.php</file>
+            <file>file:/opt/lampp/htdocs/car_house/application/models/My_model.php</file>
+        </group>
+    </open-files>
+</project-private>

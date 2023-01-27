@@ -1,0 +1,19 @@
+.nova-tab ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.nova-tab ul li{
+    padding: 5px 8px;
+    display: inline;
+    cursor: pointer;
+    background: #eee;
+    margin: 3px;
+    color: #555;
+}
+.nova-tab ul li.active{
+    border: 0px;
+    border-bottom: 2px solid #FF6200;
+}

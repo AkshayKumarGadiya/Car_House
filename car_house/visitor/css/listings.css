@@ -1,0 +1,693 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+	- Page Header
+	- Bread Cumbs
+	- Info Bar
+	- Items
+	- Listings Two
+	- List Table
+	- List Table Two
+
+- Author:  Andrey Sokoltsov
+- Profile:	http://themeforest.net/user/andreysokoltsov
+
+-------------------------------------------------------------------*/
+
+/*Page Header */
+.b-pageHeader{
+    padding: 40px 0;
+    background: url(../images/backgrounds/pageHead.jpg) center;
+    background-size: cover;
+}
+
+.b-pageHeader h1{
+    font:700 30px 'PT Sans',sans-serif;
+    float:left;
+    margin: 0;
+}
+
+.b-pageHeader__search{
+    padding:10px 15px ;
+    float:right;
+}
+
+.b-pageHeader__search h3{
+    font: 400 13px 'Open Sans',sans-serif;
+    margin: 0;
+    padding: 3px 10px;
+    border-left:3px solid #fff;
+    border-right:3px solid #fff;
+}
+
+
+/* Bread Cumbs */
+.b-breadCumbs{
+    padding: 20px 0;
+}
+
+.b-breadCumbs__page{
+    font: 400 11px 'Open Sans',sans-serif;
+}
+
+.b-breadCumbs span.fa{
+    font-size:11px;
+    margin: 0 10px;
+}
+
+
+/* Info Bar */
+.b-infoBar{
+    padding: 20px 0;
+}
+
+.b-infoBar__compare{
+    text-align: left;
+    margin-top: 12px;
+}
+
+.b-infoBar__compare div.dropdown{
+    display: inline-block;
+}
+
+.b-infoBar__compare div.dropdown ul li{
+    text-align: center;
+}
+
+.b-infoBar__compare-item,.b-infoBar__select-one-title{
+    font: 600 11px 'Open Sans',sans-serif;
+    text-transform: uppercase;
+}
+
+.b-infoBar__compare-item,.b-infoBar__compare-item:hover,.b-infoBar__compare-item:focus,.b-infoBar__compare-item:visited,.b-infoBar__compare-item:active{
+    text-decoration: none;
+}
+
+.b-infoBar__compare-item:last-child{
+    margin-left: 30px;
+}
+
+.b-infoBar__compare-item span.fa{
+    font-size:16px;
+    vertical-align: text-top;
+    margin-right: 10px;
+}
+
+.b-infoBar__compare-item span.fa.fa-caret-down{
+    margin-left: 8px;
+    font-size:14px;
+}
+
+.b-infoBar__select-one{
+    float:left;
+    margin-right: 35px;
+    position: relative;
+}
+
+.b-infoBar__select-one:last-child{
+    margin-right: 0;
+}
+
+.b-infoBar__select{
+    float:right;
+}
+
+.b-infoBar__select-one-title{
+    margin-right: 10px;
+}
+
+.b-infoBar__select-one .m-list{
+    padding: 9px 12px 9px 25px;
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+    display: inline-block;
+    margin-right: -1.5px;
+    font-size:18px;
+}
+
+.b-infoBar__select-one .m-table{
+    padding: 9px 25px 9px 12px;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    display: inline-block;
+    margin-left: -1.5px;
+    font-size:18px;
+}
+
+select.m-select{
+    text-transform: capitalize;
+    width: 125px;
+    padding: 12px 0 12px 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
+    font: 400 13px 'Open Sans',sans-serif;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none!important;
+}
+
+select.m-select:focus{
+    outline: none;
+}
+
+select.m-select + span.fa{
+    top: 15px;
+    right: 17px;
+    position: absolute;
+}
+
+.b-infoBar__select-one select{
+    font-size:11px;
+    border:none;
+    padding: 12.5px 0 12.5px 20px;
+}
+
+
+/* Items */
+.b-items{
+    padding: 72px 0 145px 0;
+}
+
+.b-items__aside{
+    text-align: center;
+}
+
+.b-items__aside-main-body{
+    padding: 30px 25px 40px 25px;
+}
+
+.b-items .s-title{
+    margin-bottom: 25px;
+}
+
+.b-items__aside-main-body-item{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.b-items__aside-main-body-item:last-child{
+    margin-bottom: 0;
+}
+
+.b-items__aside-main-body-item select{
+    border:none;
+    width:100%;
+}
+
+.b-items__aside-main-body-item > div{
+    position: relative;
+}
+
+.b-items__aside-main-body-item label{
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font: 700 12px 'Open Sans',sans-serif;
+    text-align: left;
+}
+
+.b-items__aside-main-body-item .slider{
+    margin: 20px 0 75px 0;
+    border:none;
+    float:none;
+    width:100%;
+}
+
+.b-items__aside-main-body-item .ui-widget-header{
+    border-radius: 20px;
+}
+
+.b-items__aside-main-body-item .ui-slider-handle:before{
+    content:' ';
+}
+
+.b-items__aside-main-body-item .ui-slider-handle span.min,.b-items__aside-main-body-item .ui-slider-handle span.max{
+    top:200%;
+    position: absolute;
+    left:-1px;
+    padding:2px 3px;
+    background-color: #444!important;
+    font: 600 11px 'Open Sans',sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.b-items__aside-main-body-item .ui-slider-handle span.min:before,.b-items__aside-main-body-item .ui-slider-handle span.max:before{
+    content:'';
+    width:0;
+    height:0;
+    position:absolute;
+    bottom:100%;
+    right:50%;
+    margin-right: -4px;
+    z-index:100;
+    border-right:4px solid transparent;
+    border-left:4px solid transparent;
+    border-bottom:6px solid #444;
+}
+
+.b-items__aside-main-footer{
+    padding: 30px 0 25px 0;
+}
+
+.b-items__aside-main-footer button{
+    padding-left: 20px!important;
+    margin-bottom: 10px;
+}
+
+.b-items__aside-main-footer button span.fa{
+    width:30px!important;
+    height:30px!important;
+    font-size:17px!important;
+}
+
+.b-items__aside-main-footer > a{
+    text-transform: uppercase;
+    font: 600 11px 'Open Sans',sans-serif;
+    text-decoration: underline;
+}
+
+.b-items__aside-main-footer > a:hover{
+    text-decoration: none;
+}
+
+.b-items__aside-sell{
+    margin-top: 45px;
+}
+
+.b-items__aside-sell-img{
+    background: url(../images/backgrounds/sell.jpg) center no-repeat;
+    background-size: cover;
+    height: 200px;
+    text-align: center;
+}
+
+.b-items__aside-sell-img h3{
+    margin: 25px 0 0 0;
+    padding: 0 10px;
+    border-left:4px solid #fff;
+    border-right:4px solid #fff;
+    font: 700 20px 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.b-items__aside-sell-info{
+    padding: 20px 25px 30px 25px;
+    text-align: left;
+    font: 400 13px 'Open Sans',sans-serif;
+}
+
+.b-items__aside-sell-info a{
+    border:1px solid #fff;
+    font: 600 11px 'Open Sans',sans-serif!important;
+    padding-left: 15px!important;
+    margin-top: 15px;
+}
+
+.b-items__aside-sell-info a span.fa{
+    width:25px!important;
+    height:25px!important;
+    font-size:13px!important;
+}
+
+.b-items__cars-one{
+    overflow: hidden;
+}
+
+.b-items__cars-one-img{
+    width:270px;
+    height:230px;
+    position: relative;
+    float:left;
+}
+
+.b-items__cars-one{
+    padding: 5px;
+    border:1px solid #eeeeee;
+    margin-bottom: 40px;
+}
+
+.b-items__cars-one:last-child{
+    margin-bottom: 0;
+}
+
+.b-items__cars-one-img-video{
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding: 8px 10px;
+    font: 400 11px 'Open Sans',sans-serif;   
+}
+
+.b-items__cars-one-img-video span.fa{
+    margin-right:5px ;
+}
+
+.b-items__cars-one-img-video,.b-items__cars-one-img-video:hover,.b-items__cars-one-img-video:visited,.b-items__cars-one-img-video:active,.b-items__cars-one-img-video:focus{
+    text-decoration: none;
+}
+
+.b-items__cars-one-img-type{
+    font: 700 10px 'Open Sans',sans-serif;
+    padding: 5px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.b-items form input[type='checkbox']{
+    position: absolute;
+    visibility: hidden;
+}
+
+.b-items form input[type='checkbox']:checked + .b-items__cars-one-img-check span.fa{
+    display: block;
+}
+
+.b-items__cars-one-img-check{
+    position: absolute;
+    top:10px;
+    right:10px;
+    border:1px solid #dddddd;
+    width:20px;
+    height:20px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.b-items__cars-one-img-check span.fa{
+    font-size:12px;
+    position: absolute;
+    top:3px;
+    left:3px;
+    display: none;
+}
+
+.b-items__cars-one-info{
+    margin:20px 15px 0 290px;
+}
+
+.b-items__cars-one-info-header{
+    text-align: right;
+    padding-bottom: 52px;
+    margin-bottom: 30px;
+}
+
+.b-items__cars-one-info-header h2{
+    float:left;
+    font: 600 20px 'Open Sans',sans-serif;
+    padding-left: 15px;
+    border-left:4px solid #f76d2b;
+    margin: 8px 0 0 0;
+    line-height:1;
+    padding: 1px 0 1px 15px;
+}
+
+.b-items__cars-one-info-header > span{
+    padding: 5px 15px;
+    display: inline-block;
+    font:700 20px 'PT Sans',sans-serif;
+}
+
+.b-items__cars-one-info p{
+    font: 300 13px 'Open Sans',sans-serif;
+    margin: 0 0 30px 0;
+}
+
+.b-items__cars-one-info-km{
+    font: 600 12px 'Open Sans',sans-serif;
+    text-transform: uppercase;
+}
+
+.b-items__cars-one-info-km span.fa{
+    font-size:18px;
+    margin-right: 4px;
+}
+
+.b-items__cars-one-info-details{
+    text-align: right;
+}
+
+.b-items__cars-one-info-details .b-featured__item-links{
+    margin:9px 0 0 0;
+    float:left;
+}
+
+.b-items__cars-one-info-details .b-featured__item-links a{
+    font-size:11px;
+}
+
+.b-items__cars-one-info a.btn{
+    font: 600 10px 'Open Sans',sans-serif!important;
+    border:1px solid #ddd;
+    padding-left: 12px!important;
+}
+
+.b-items__cars-one-info a.btn span.fa{
+    width:20px!important;
+    height:20px!important;
+    font-size:13px!important;
+    padding: 3px!important;
+    margin-left: 10px!important;
+}
+
+.b-items__pagination{
+    margin-top: 75px;
+    text-align: center;
+}
+
+.b-items__pagination-main{
+    display: inline-block;
+    padding: 5px;
+    border:1px solid #dddddd;
+    border-radius: 30px;
+}
+
+.b-items__pagination-main > a{
+    width:25px;
+    height:25px;
+    padding: 2px;
+    border-radius: 100%;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.b-items__pagination-main > a:hover{
+    opacity: 1;
+}
+
+.b-items__pagination-main > a.m-left{
+    margin-right: 15px;
+}
+
+.b-items__pagination-main > a.m-right{
+    margin-left: 15px;
+}
+
+.b-items__pagination-main > span a{
+    font: 400 11px 'Open Sans',sans-serif;
+    margin-right: 5px;
+    cursor:pointer;
+}
+
+.b-items__pagination-main > span.m-active a,.b-items__pagination-main > span:hover a{
+    font: 700 11px 'Open Sans',sans-serif;
+}
+
+.b-items__pagination-main > span:last-of-type a{
+    margin-right: 0;
+}
+
+/* Listings Two */
+.m-listingsTwo .b-items__cars-one-img{
+    float:right;
+    width:237px;
+    height:202px;
+    margin: 20px;       
+}
+
+.m-listingsTwo .b-items__cars-one-info{
+    margin: 20px 285px 0 25px
+}
+
+.m-listingsTwo .b-items__cars-one-img-type{
+    top:0;
+    left:0;
+}
+
+.m-listingsTwo .b-items__cars-one-img-check{
+    position: relative;
+    top:0;
+    right:0;
+    display: inline-block;
+}
+
+.m-listingsTwo .b-items__cars-one-info-header{
+    padding-bottom: 30px;
+}
+
+.m-listingsTwo .b-items__cars-one-info p{
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.b-items__cars-one-info-title{
+    font: 600 11px 'Open Sans',sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.b-items__cars-one-info-value{
+    font: 400 11px 'Open Sans',sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.row.m-smallPadding{
+    margin: 0 -5px;
+}
+
+.row.m-smallPadding > div{
+    padding: 0 5px;
+}
+
+.m-listingsTwo .b-items__cars-one-info-price{
+    text-align: right;
+    margin-top: 15px;
+}
+
+.m-listingsTwo .b-items__cars-one-info-price h3{
+    font: 600 11px 'Open Sans',sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.m-listingsTwo .b-items__cars-one-info-price h4{
+    font:700 24px 'PT Sans',sans-serif;
+    margin: 5px 0 20px 0;
+}
+
+/* List Table */
+.b-items__cell{
+    padding: 5px;
+    border: 1px solid #eeeeee;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+    height: 425px;
+}
+
+.m-listTable .b-items__cars-one-img{
+    width:auto;
+    height:auto;
+    float:none;
+}
+
+.b-items__cell-info{
+    padding: 0 10px;
+}
+ .b-items__cell-info-title{
+    padding-bottom: 20px;
+    margin: 25px 0;
+ }
+
+.b-items__cell-info h2{
+    font:600 15px 'Open Sans',sans-serif;
+    padding-left: 15px;
+    border-left: 4px solid #f76d2b;
+    margin: 0;
+}
+
+.b-items__cell-info > p{
+    font:300 13px 'Open Sans',sans-serif;
+    margin: 0 4px 20px 4px;
+}
+
+.b-items__cell-info > p + div{
+    margin-left:4px ;
+}
+
+.b-items__cell-info ul{
+    font:400 11px 'Open Sans',sans-serif;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.b-items__cell-info-price{
+    margin:  30px 0 0 0;
+    font: 700 22px 'PT Sans',sans-serif;
+}
+
+.b-items__cell-info-km span.fa{
+    font-size:19px;
+}
+
+.b-items__cell-info-km{
+    margin-left: 40px;
+}
+
+.b-items__cell-info-km p{
+    font: 600 12px 'Open Sans',sans-serif;
+    text-transform: uppercase;
+}
+
+.b-items__cell-info a.btn{
+    font: 600 10px 'Open Sans',sans-serif!important;
+    border: 1px solid #ddd;
+    padding-left: 12px!important;
+    margin-top: 40px;
+}
+
+.b-items__cell-info a.btn span.fa{
+    width: 20px!important;
+    height: 20px!important;
+    font-size: 13px!important;
+    padding: 3px!important;
+    margin-left: 10px!important;
+}
+
+.b-items__cell .b-items__cars-one-img-check{
+    top:20px;
+}
+
+.m-listTable .b-items__pagination{
+    margin-top: 35px;
+}
+
+
+/* List Table Two */
+.m-listTableTwo .b-items__cars-one-img{
+    float:none;
+    width:auto;
+    height:auto;
+}
+
+.m-listTableTwo .b-items__cell-info-price span{
+    font: 600 11px 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.m-listTableTwo .b-items__cell{
+    border:none;
+    margin-bottom: 0;
+}
+
+.m-listTableTwo .row.m-border > div{
+    border-right:1px solid #eee;
+    margin-bottom: 40px;
+}
+
+.m-listTableTwo .row.m-border > div:nth-child(3n){
+    border:none;
+}
+
+.m-listTableTwo .b-items__cell .b-items__cars-one-img-check{
+   top:10px; 
+}

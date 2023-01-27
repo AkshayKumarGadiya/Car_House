@@ -1,0 +1,323 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+	- About Page
+		- Page Header
+		- Best
+		- What
+		- More
+		- Personal
+	- Contacts
+	- Page 404
+		- Error
+
+- Author:  Andrey Sokoltsov
+- Profile:	http://themeforest.net/user/andreysokoltsov
+
+-------------------------------------------------------------------*/
+/* About Page */
+/* Page Header */
+.m-about .b-pageHeader__search h3{
+    padding: 3px 15px;
+}
+
+/* Best */
+.b-best{
+    padding: 70px 0 80px 0;
+    border-bottom:1px solid #eee;
+}
+
+.b-best__info-head{
+   padding-bottom: 20px;
+   margin-bottom: 30px;
+}
+
+.b-best__info-head h2{
+    margin: 0;
+    font: 700 22px 'Open Sans',sans-serif;
+    padding-left: 15px;
+    border-left:4px solid #f76d2b;
+}
+
+.b-best__info h6{
+    font: 600 14px 'Open Sans',sans-serif;
+    margin-bottom: 30px;
+}
+
+.b-best__info p{
+    font: 300 13px 'Open Sans',sans-serif;
+    margin: 0 0 40px 0;
+    line-height: 1.9;
+}
+
+/* What */
+.b-what{
+    padding: 85px 0;
+    text-align: center;
+}
+
+.b-what h2.s-title,.b-what h3.s-titleBg{
+    width:225px
+}
+
+
+/*More*/
+.b-more{
+    padding: 75px 0;
+    border-bottom:2px solid #eee;
+}
+
+.b-more__why h2.s-title,.b-more__info h2.s-title{
+    margin-bottom: 30px;
+}
+
+.b-more__why p{
+    margin:  0 0 40px 0;
+    font: 400 13px 'Open Sans',sans-serif;
+    line-height:1.7;
+}
+
+.b-more__why ul.s-list{
+    margin-bottom: 0;
+}
+
+.b-more__info-block{
+    margin-bottom: 10px;
+}
+
+.b-more__info-block-title{
+    font: 600 14px 'Open Sans',sans-serif;
+    padding: 13px 58px 13px 25px;
+    position: relative;
+    height:46px;
+}
+
+.b-more__info-block-title a{
+    color:#fff;
+    position: absolute;
+    right:0;
+    top:0;
+    display: inline-block;
+    border-bottom: 46px solid #f76d2b;
+	border-left: 28px solid transparent;
+	height: 0;
+	width: 60px;
+}
+
+.b-more__info-block-title > a span.fa{
+    margin: 15px 0 0 10px;
+}
+
+.b-more__info-block-inside{
+    padding: 25px;
+    display: none;
+}
+
+.b-more__info-block-inside p{
+   font: 300 13px 'Open Sans',sans-serif;
+   line-height:1.7; 
+}
+
+.b-more__info-block-title.m-active a{
+    border-bottom-color:#fff;
+}
+
+
+/*Personal*/
+.b-personal{
+    padding: 90px 0 130px 0;
+    text-align: center;
+}
+
+.b-personal .s-titleBg{
+    padding-left:10px ;
+    padding-right: 10px;
+}
+
+.b-personal__worker{
+    padding: 15px;
+}
+
+.b-personal__worker-img{
+    max-width: 270px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.b-personal__worker h6{
+    font: 700 11px 'Open Sans',sans-serif;
+    text-align: left;
+}
+
+.b-personal__worker-name{
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.b-personal__worker-name:after{
+    left:30px;
+}
+
+.b-personal__worker-name h4.s-titleDet{
+    text-transform: none;
+    font-size:16px;
+    margin: 0;
+}
+
+.b-personal__worker p{
+    font: 300 13px 'Open Sans',sans-serif;
+    text-align: left;
+    line-height:1.7;
+}
+
+.b-personal__worker-img-social{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    display: none;
+}
+
+.b-personal__worker-img-social span.fa{
+    margin-right: 3px;
+}
+
+.b-personal__worker-img:hover .b-personal__worker-img-social{
+    display: block;
+}
+
+.b-personal__worker-img-social-main{
+    height:22px;
+    position: absolute;
+    top:50%;
+    margin-top: -22px;
+    left:0;
+    width:100%;
+    font-size:22px;
+}
+
+/*= Contacts =*/
+.m-contacts .b-pageHeader__search h3{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.b-contacts{
+    padding: 75px 0 140px 0;
+}
+
+.b-contacts__form-header{
+    padding-bottom: 20px;
+    margin: 10px 0 45px 0;
+}
+
+.b-contacts__form-header h2{
+    text-transform: none;
+    font-size:22px;
+    margin: 0;
+}
+
+.b-contacts__form p{
+    font: 600 14px 'Open Sans',sans-serif;
+    margin:  0 0 40px 0;
+}
+
+.b-contacts__form textarea{
+    height:140px;
+}
+
+.b-contacts__address{
+    margin-left: 50px;
+}
+
+.b-contacts__address-hours{
+    margin-bottom: 45px;
+}
+
+.b-contacts__address-hours-main,.b-contacts__address-info-main{
+    padding: 35px;
+}
+
+.b-contacts__address-hours-main h5{
+    font: 700 13px 'Open Sans',sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.b-contacts__address-hours-main p{
+    font: 400 13px 'Open Sans',sans-serif;
+}
+
+.b-contacts__address-info{
+    
+}
+
+.b-contacts__address-info-main-item{
+    font: 700 13px 'Open Sans',sans-serif;
+    margin-bottom: 20px;
+}
+
+.b-contacts__address-info-main-item span.fa{
+    font-size:16px;
+    margin-right: 10px;
+}
+
+.b-contacts__address-info-main-item span.fa-envelope,.b-contacts__address-info-main-item span.fa-fax{
+    font-size:14px;
+}
+
+.b-contacts__address-info-main-item p{
+    font: 400 13px 'Open Sans',sans-serif;
+    margin: 5px 0 10px 30px;
+}
+
+.b-contacts__address-info-main-item em{
+    font: 400 13px 'Open Sans',sans-serif;
+}
+
+/* Page 404 */
+/* Error */
+.b-error{
+    padding: 100px 0 0 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.b-error h1{
+    font: 800 44px 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    letter-spacing:5px;
+    margin: 0 0 10px 0;
+}
+
+.b-error h2{
+    font: 700 40px 'Open Sans',sans-serif;
+    margin: 25px 0 60px 0;
+    display: inline-block;
+    padding:0 30px 50px 30px;
+    text-transform: uppercase;
+}
+
+.b-error p{
+    font: 600 14px 'Open Sans',sans-serif;
+    margin: 0 0 90px 0;
+}
+
+.b-error h3.s-title{
+    font: 700 14px 'Open Sans',sans-serif;
+    color:#202020;
+    letter-spacing: 0;
+    margin: 0 0 40px 0;
+}
+
+.b-error .b-blog__aside-search{
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.b-error-img{
+    width:100%;
+}
