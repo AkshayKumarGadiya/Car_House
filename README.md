@@ -1,8 +1,8 @@
-Project Name: "Car House"
-Project Descriptions:
-•Designed responsive user interfaces of this e-commerce website "Car House" using PHP framework - CodeIgniter and established communication flow between four modules Admin, Car dealer, Customers, and Visitors
-•Administered MySQL database and performed installation, database design, backup, recovery, security, storage management, and data integrity operations
-•Created front-end and back-end design and services using HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, MySQL, AJAX, OOPs methods, and application controller to loads models, libraries, helpers, and scripts
+Project Name: "Car House" <br />
+Project Descriptions: <br />
+•Designed responsive user interfaces of this e-commerce website "Car House" using PHP framework - CodeIgniter and established communication flow between four modules Admin, Car dealer, Customers, and Visitors <br />
+•Administered MySQL database and performed installation, database design, backup, recovery, security, storage management, and data integrity operations <br />
+•Created front-end and back-end design and services using HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, MySQL, AJAX, OOPs methods, and application controller to loads models, libraries, helpers, and scripts <br />
 
 Database Design: EER Diagram
 You can find the SQL file in the backend_databse folder.
