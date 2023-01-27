@@ -6,4 +6,6 @@ Project Descriptions:
 
 Database Design: EER Diagram
 
-Functionalities of Car House
+![alt text](https://github.com/AkshayKumarGadiya/Car_House/blob/main/user_interfaces/relationship.png?raw=true)
+
+Functionalities of Car House:
